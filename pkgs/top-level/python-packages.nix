@@ -5149,6 +5149,8 @@ in {
 
   pytado = callPackage ../development/python-modules/pytado { };
 
+  cffi_utils = callPackage ../development/python-modules/cffi_utils { };
+
 });
 
 in fix' (extends overrides packages)
