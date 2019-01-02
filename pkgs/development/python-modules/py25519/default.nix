@@ -9,6 +9,11 @@ buildPythonPackage rec {
     sha256 = "0marrs2p0lcv8r5gzf41skq12q7rw1hwccykwdcn7in7pbc9gaz6";
   };
 
+  postPatch = ''
+    substituteInPlace c/Rules.mk \
+      --replace '-static' '-static -L${stdenv.glibc.static}/lib'
+  '';
+
   propagatedBuildInputs = [ cffi_utils ];
 
   meta = with stdenv.lib; {

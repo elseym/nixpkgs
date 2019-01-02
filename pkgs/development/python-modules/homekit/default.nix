@@ -1,5 +1,5 @@
 { stdenv, buildPythonPackage, fetchPypi
-, zeroconf, gmpy2, py25519, hkdf, ed25519 }:
+, zeroconf, gmpy2, py25519, hkdf, ed25519, six }:
 
 buildPythonPackage rec {
   pname = "homekit";
@@ -10,7 +10,7 @@ buildPythonPackage rec {
     sha256 = "0yfypamsnr2c76pjvyzlhj072vc5bfx50ag66fzhvags8309v954";
   };
 
-  propagatedBuildInputs = [ zeroconf gmpy2 py25519 hkdf ed25519 ];
+  propagatedBuildInputs = [ zeroconf gmpy2 py25519 hkdf ed25519 six ];
 
   meta = with stdenv.lib; {
     description = "A python implementation to work as both HomeKit controller and accessory.";
