@@ -5151,6 +5151,8 @@ in {
 
   cffi_utils = callPackage ../development/python-modules/cffi_utils { };
 
+  py25519 = callPackage ../development/python-modules/py25519 { };
+
 });
 
 in fix' (extends overrides packages)
