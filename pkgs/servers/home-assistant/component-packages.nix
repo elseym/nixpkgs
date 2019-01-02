@@ -471,9 +471,9 @@
     "history_graph" = ps: with ps; [ aiohttp-cors sqlalchemy ];
     "hive" = ps: with ps; [  ];
     "hlk_sw16" = ps: with ps; [  ];
-    "homekit" = ps: with ps; [  ];
-    "homekit.const" = ps: with ps; [  ];
-    "homekit.util" = ps: with ps; [  ];
+    "homekit" = ps: with ps; [ homekit ];
+    "homekit.const" = ps: with ps; [ homekit ];
+    "homekit.util" = ps: with ps; [ homekit ];
     "homekit_controller" = ps: with ps; [  ];
     "homematic" = ps: with ps; [ pyhomematic ];
     "homematicip_cloud" = ps: with ps; [  ];
