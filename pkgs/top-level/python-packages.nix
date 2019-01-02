@@ -5153,6 +5153,8 @@ in {
 
   py25519 = callPackage ../development/python-modules/py25519 { };
 
+  homekit = callPackage ../development/python-modules/homekit { };
+
 });
 
 in fix' (extends overrides packages)
