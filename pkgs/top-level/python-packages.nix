@@ -6576,6 +6576,8 @@ in {
 
   pony = callPackage ../development/python-modules/pony { };
 
+  pydeconz = callPackage ../development/python-modules/pydeconz { };
+
 });
 
 in fix' (extends overrides packages)

@@ -131,7 +131,7 @@
     "darksky" = ps: with ps; [ python-forecastio ];
     "datadog" = ps: with ps; [ datadog ];
     "ddwrt" = ps: with ps; [  ];
-    "deconz" = ps: with ps; [  ];
+    "deconz" = ps: with ps; [ pydeconz ];
     "decora" = ps: with ps; [  ];
     "decora_wifi" = ps: with ps; [  ];
     "default_config" = ps: with ps; [ pynacl aiohttp-cors distro netdisco sqlalchemy zeroconf ];
